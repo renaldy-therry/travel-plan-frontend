@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  background-color: rgb(112, 93, 252);
+  min-height: 200px;
+  height: 300;
+  padding: 50px 10px;
+  border-radius: 30px;
+  color: #fff;
+  width: 100%;
+}
