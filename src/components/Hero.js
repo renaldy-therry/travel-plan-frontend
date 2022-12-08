@@ -1,26 +1,17 @@
 import React from 'react';
-import Slider from 'react-slick';
 
 function Hero() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-    return (
-      <div className='mx-32 mt-10'>
-        <Slider {...settings}>
-          <div className='min-h-12 h-52 bg-primary rounded-3xl text-center overflow-hidden'>
-            {/* <img src='https://placeimg.com/1000/800/arch' className='w-full'/> */}
-          </div>
-          <div className='min-h-12 h-52 bg-primary rounded-3xl text-center overflow-hidden'>
-            {/* <img src='https://placeimg.com/1000/800/arch' className='w-full'/> */}
-          </div>
-        </Slider>
+  return (
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content text-center">
+        <div className="max-w-md">
+          <h1 className="text-5xl font-bold">Hello there</h1>
+          <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <button className="btn btn-primary">Get Started</button>
+        </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Hero;
