@@ -17,8 +17,8 @@ function App() {
 
   React.useState(() => {
     async function getUser() {
-      setInitializing(false);
       const data = await AuthApi.getUserLogin();
+      setInitializing(false);
       setAuthUser(data.data.user);
     }
 
